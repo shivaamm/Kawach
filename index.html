@@ -339,20 +339,20 @@ Regular health check ups are always recommended to keep a check and maintain the
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Fill The Following Form to Book an Appointment </h2>
+                        <h2>Fill The Following Form to Book an Appointment!</h2>
                         <p>Schedule an appointment with the desired doctor and comfortably the best in class medical treatment.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">No Need to go anywhere</strong>schedule from your home</div>
+                                <div class="media-body"><strong class="blue">No Need to go anywhere </strong> schedule from your home</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Interact with best doctors</strong>, we are here with you in your tough times</div>
+                                <div class="media-body"><strong class="blue">Interact with best doctors</strong> we are here with you in your tough times</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">24x7 Support</strong> consultation and download your appointment</div>
+                                <div class="media-body"><strong class="blue">24x7 Support consultation </strong> and download your appointment</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
@@ -367,35 +367,31 @@ Regular health check ups are always recommended to keep a check and maintain the
                     <div class="form-container">
                         <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Patient Name</label>
+                                <input type="text" class="form-control-input" id="name" name="name" placeholder="Name" required>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
+                                <input type="number" class="form-control-input" id="age" name="age" placeholder="Age" required>
                                 <div class="help-block with-errors"></div>
                             </div>
+							<div class="form-group" onload="resetSelection()">
+								<select  class="form-control-select" id="city" size="1" onchange="makeSubmenu(this.value)" required>
+									<option class="select-option" value="" disabled selected>Choose City</option>
+									<option class="select-option">Delhi</option>
+									<option class="select-option">Mumbai</option>
+									<option class="select-option">Kolkata</option>
+									<option class="select-option">Chennai</option>
+									</select>
+
+									<br>
+
+									<select  class="form-control-select" id="hospital" size="1" required>
+									<option class="select-option" value="" disabled selected>Choose hospital</option>
+									<option class="select-option"></option>
+									</select>
+							</div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Phone</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Select City</option>
-                                    <option class="select-option" value="Personal Loan">City 1</option>
-                                    <option class="select-option" value="Car Loan">City 2</option>
-                                    <option class="select-option" value="House Loan">City 3</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree with Kawach's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Book Appointment</button>
+								<input type="button" id="button" class="form-control-submit-button" value="Submit"/>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
@@ -780,6 +776,8 @@ Regular health check ups are always recommended to keep a check and maintain the
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jspdf.min.js"></script> <!-- for appointment pdf download-->
+    <script src="js/appointment.js"></script>
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
