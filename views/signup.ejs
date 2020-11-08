@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/css/swiper.css" rel="stylesheet">
+	<link href="/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body style="background-color: #f9fafc;">
+    <!-- Request -->
+    <br><br><br><br>
+    <div id="request" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Request Form -->
+                    
+                    <div class="form-container">
+                      <div class="form-group" style="text-align: center;">
+                        <h2 id="button" style="margin-left: -50px;">SIGN-UP</h2>
+                      </div>
+                        <form id="requestForm" data-toggle="validator" data-focus="false" action="/signup" method="POST">
+                            <div class="form-group">
+                              <input type="text" class="form-control-input" id="name" name="user[name]" placeholder="Name" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control-input" id="email" name="user[email]" placeholder="Email" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control-input" id="age" name="user[age]" placeholder="Age" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control-input" id="phoneno" name="user[phoneno]" placeholder="Ph. No." required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control-input" id="pass" name="user[pass]" placeholder="Password" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group" style="text-align: center;">
+								                <input type="submit" id="button" class="form-control-submit-button" value="Signup" style="width: 200px;"/>
+                            </div>
+                        </form>
+                    </div> <!-- end of form-container -->
+                    <!-- end of request form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of request -->
+</body>
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="/js/appointment.js"></script> 
+<script src="/js/jspdf.min.js"></script> 
+</html>

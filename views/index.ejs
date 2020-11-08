@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hackCBS</title>
+  <link href="/css/email.css" rel="stylesheet">
+</head>
+<body>
+<br><br>
+<div class="contact-container">
+  <ul class="actions">
+    <li><a href="#" id="contact" class="button big">SUBSCRIBE NOW</a></li>
+  </ul>
+</div>
+<div class="cd-popup contact" role="alert">
+  <form name="contactform" id="contactform" class="contact-form" action="/posting" method="POST">
+    <div class="cd-popup-container">
+      <p>
+        <a href="" class="cd-popup-close cd-close-button">
+          <i class="fa fa-times" style="pointer-events:none;"></i>
+        </a>
+      </p>
+      <h2>SUBSCRIBE FOR LATEST INFROMATION RELATED TO COVID</h2>
+      <div class="name">
+        <input type="text" id="name" name="user[name]" placeholder="Name"/>
+      </div>
+      <div class="email">
+        <input type="email" id="email" name="user[email]" placeholder="Email"/>
+      </div>
+      <br>
+      <div class="submit">
+        <input type="submit" name="submit" id="submit" value="Send" />
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="cd-popup notification" role="alert">
+  <div class="cd-popup-container">
+    <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times" style="pointer-events:none;"></i></a>
+    <p>
+      <h3 id="notification-text">Thanks for getting in touch!</h3>
+    </p>
+  </div>
+</div>
+<script src="/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="/js/email.js"></script>
+</body>
+</html>

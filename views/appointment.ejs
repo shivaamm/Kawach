@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/css/swiper.css" rel="stylesheet">
+	<link href="/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/email.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container"><br>  
+  <h2 style="text-align: center;"><b>MY APPOINTMENTS</b></h2>  
+     
+  <table class="table">
+    <thead>
+      <th>Patient Name</th>
+        <th>Patient Age</th>
+        <th>City</th>
+        <th>Hospital Name</th>
+      </tr>
+      <% users.forEach(function(user){ %>
+      <tr id="row1">
+        <td id="date_row1"><%= user.pname %></td>
+        <td id="name_row1"><%= user.page %></td>
+        <td id="name_amount1"><%= user.city %></td>
+        <td id="name_amount1"><%= user.hospital %></td>
+      </tr>
+      <% }) %> 
+    </tbody>
+  </table>
+  <br><br><br>
+</div>
+
+</body>
+</html>
