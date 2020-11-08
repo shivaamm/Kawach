@@ -108,6 +108,10 @@
     <!-- end of navigation -->
 
 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f04328f5-d7fe-466d-9b00-4f9dd88e5f12"></div>
+
+
     <!-- Header -->
     <header id="header" class="header">
         <div class="header-content">
@@ -115,9 +119,9 @@
                 <div class="row">
                     <div class="col-lg-6">`
                         <div class="text-container">
-                            <h1><span class="turquoise">KAWACH</span></h1>
-                            <p class="p-large">Health project for hackcbs hackathon</p>
-                            <a class="btn-solid-lg page-scroll" href="#services">text</a>
+                            <h1><span class="turquoise">Bringing The Future Of Healthcare</span></h1>
+                            <p class="p-large">We Take Care Of Your Healthy Health With Kawach<br>Get Emergency Calls, Easy Appointments, and Qualified Doctors</p>
+                            <a class="btn-solid-lg page-scroll" href="#services">Get Benefits Now</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -137,7 +141,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Services</h2>
+                    <h2>Provide Special Services</h2>
                     <p class="p-heading p-large">Combining the best specialists and equipment to provide you nothing short of the best in healthcare</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -335,24 +339,24 @@ Regular health check ups are always recommended to keep a check and maintain the
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Fill The Following Form </h2>
+                        <h2>Fill The Following Form to Book an Appointment!</h2>
                         <p>Schedule an appointment with the desired doctor and comfortably the best in class medical treatment.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Automate your marketing</strong> activities and get results today</div>
+                                <div class="media-body"><strong class="blue">No Need to go anywhere </strong> schedule from your home</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Interact with all your</strong> targeted customers at a personal level</div>
+                                <div class="media-body"><strong class="blue">Interact with best doctors</strong> we are here with you in your tough times</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Convince them to buy</strong> your company's awesome products</div>
+                                <div class="media-body"><strong class="blue">24x7 Support consultation </strong> and download your appointment</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Save precious time</strong> and invest it where you need it the most</div>
+                                <div class="media-body"><strong class="blue">Save precious time</strong> and spend it wisely with your loved ones</div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -363,35 +367,31 @@ Regular health check ups are always recommended to keep a check and maintain the
                     <div class="form-container">
                         <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Patient Name</label>
+                                <input type="text" class="form-control-input" id="name" name="name" placeholder="Name" required>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
+                                <input type="number" class="form-control-input" id="age" name="age" placeholder="Age" required>
                                 <div class="help-block with-errors"></div>
                             </div>
+							<div class="form-group" onload="resetSelection()">
+								<select  class="form-control-select" id="city" size="1" onchange="makeSubmenu(this.value)" required>
+									<option class="select-option" value="" disabled selected>Choose City</option>
+									<option class="select-option">Delhi</option>
+									<option class="select-option">Mumbai</option>
+									<option class="select-option">Kolkata</option>
+									<option class="select-option">Chennai</option>
+									</select>
+
+									<br>
+
+									<select  class="form-control-select" id="hospital" size="1" required>
+									<option class="select-option" value="" disabled selected>Choose hospital</option>
+									<option class="select-option"></option>
+									</select>
+							</div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Phone</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Personal Loan">Starter</option>
-                                    <option class="select-option" value="Car Loan">Medium</option>
-                                    <option class="select-option" value="House Loan">Complete</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">REQUEST</button>
+								<input type="button" id="button" class="form-control-submit-button" value="Submit"/>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
@@ -421,7 +421,11 @@ Regular health check ups are always recommended to keep a check and maintain the
                     <!-- Video Preview -->
                     <div class="image-container">
                         <div class="video-wrapper">
+<<<<<<< HEAD
                             <a class="popup-youtube" href="https://youtu.be/Ou0Zq71YTNI" data-effect="fadeIn">
+=======
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=Ou0Zq71YTNI&feature=youtu.be" data-effect="fadeIn">
+>>>>>>> 83fc730e1b1465fd368c13188fa0b64fd3bd6882
                                 <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
                                 <span class="video-play-button">
                                     <span></span>
@@ -515,8 +519,8 @@ Regular health check ups are always recommended to keep a check and maintain the
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>About The Team</h2>
-                    <p class="p-heading p-large">Meat our team of specialized marketers and business developers which will help you research new products and launch them in new emerging markets</p>
+                    <h2>Explore the virtual tour</h2>
+                    <p class="p-heading p-large">Worried about the kind of hospital facilities we are connected with? Don't worry we will take care for you!! Here you can check by taking an virtual tour of the facilities</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -525,96 +529,88 @@ Regular health check ups are always recommended to keep a check and maintain the
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-1.svg" alt="alternative">
+                            <a href="https://go.echoar.xyz/tqKc" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>Lacy Whitelong</strong></p>
+                        <p class="p-large"><strong> Whitelong</strong></p>
                         <p class="job-title">Business Developer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
+                        
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
+                            <a href="https://go.echoar.xyz/EM3r" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>Chris Brown</strong></p>
                         <p class="job-title">Online Marketer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
+                        
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-3.svg" alt="alternative">
+                            <a href="https://go.echoar.xyz/KRFD" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Lacy Whitelong</strong></p>
+                        <p class="job-title">Business Developer</p>
+                        
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <a href="https://go.echoar.xyz/qP9r" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Lacy Whitelong</strong></p>
+                        <p class="job-title">Business Developer</p>
+                        
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <a href="https://go.echoar.xyz/tEqj" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Lacy Whitelong</strong></p>
+                        <p class="job-title">Business Developer</p>
+                        
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <a href="https://go.echoar.xyz/74m1" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Lacy Whitelong</strong></p>
+                        <p class="job-title">Business Developer</p>
+                        
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <a href="https://go.echoar.xyz/c3Tn" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>Sheila Zimerman</strong></p>
                         <p class="job-title">Software Engineer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
+                        
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
                     <!-- Team Member -->
                     <div class="team-member">
                         <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-4.svg" alt="alternative">
+                            <a href="https://go.echoar.xyz/Wb2H" ><img class="img-fluid" src="images/team-member-1.svg" alt="alternative"></a>
                         </div> <!-- end of image wrapper -->
                         <p class="p-large"><strong>Mary Villalonga</strong></p>
                         <p class="job-title">Product Manager</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
+                        
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
@@ -640,14 +636,10 @@ Regular health check ups are always recommended to keep a check and maintain the
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606" allowfullscreen></iframe>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
+                
+                <div class="col-lg-12">
                     
-                    <!-- Contact Form -->
+                    <!-- Contact Form 
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
@@ -675,7 +667,12 @@ Regular health check ups are always recommended to keep a check and maintain the
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
+                    -->
                     <!-- end of contact form -->
+
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-b1883b24-10cd-4c15-b67a-e277ea9dcf16"></div>
+
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -683,6 +680,8 @@ Regular health check ups are always recommended to keep a check and maintain the
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
 
+
+    
 
     <!-- Footer -->
     <div class="footer">
@@ -769,6 +768,8 @@ Regular health check ups are always recommended to keep a check and maintain the
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jspdf.min.js"></script> <!-- for appointment pdf download-->
+    <script src="js/appointment.js"></script>
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
