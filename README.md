@@ -1,4 +1,4 @@
-# Hack_CBS_3.O
+# KAWACH
 Repo for hack cbs 3.O hackathon
 
 Team name - Web Slingers
