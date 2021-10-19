@@ -2,3 +2,5 @@
 Repo for hack cbs 3.O hackathon
 
 This branch is for the backend where node.js is used 
+- Add some more functionalities
+- validations (login/signup)
