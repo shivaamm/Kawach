@@ -37,3 +37,5 @@ All done, now enjoy the product by web slingers :)
 
 
 *** Will add more features into it
+- Add some more functionalities
+- validations (login/signup)
