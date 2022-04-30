@@ -4,7 +4,6 @@ Repo for hack cbs 3.O hackathon
 Team name - Web Slingers
 
 Check live here - https://web-slingers-hackcbs.herokuapp.com/   
-* link expired
 
 ## Demo Links
 
